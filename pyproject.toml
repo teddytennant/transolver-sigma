@@ -1,0 +1,15 @@
+[project]
+name = "transolver-sigma"
+version = "0.1.0"
+authors = [{ name = "Teddy Tennant", email = "teddytennant@icloud.com" }]
+dependencies = ["jax>=0.4.20", "numpy"]
+
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
